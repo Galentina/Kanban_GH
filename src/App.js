@@ -8,6 +8,7 @@ import {v4 as uuid4v} from 'uuid';
 
 function App() {
     const [tasks, setTasks] = useState([])
+    console.log("I am a conflict")
     const [order, setOrder] = useState(0);
     const [services, setServices] = useState([
         {name: '--', price: 0},
@@ -18,7 +19,7 @@ function App() {
         {name: 'Video card replacing', price: 120},
         {name: 'Hard drive replacing', price: 130}
         ]);
-
+    console.log("I am a non-conflict")
     const status = ['Received from client', 'In processing', 'On verification', 'Ready for delivery', 'Delivered', 'Received by client'];
     const priority = [1, 2, 3, 4, 5];
 
